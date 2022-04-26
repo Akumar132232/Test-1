@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Document</title>
+	<style>
+		body {
+			font-size: 'Square Peg',cursive;
+			background-image: url("https://i.pinimg.com/originals/61/79/ba/6179bac03a8f13857c55d90e3ceaf063.jpg");
+		}
+
+		.geek-desc {
+			margin: 2px;
+			font-size: x-large;
+			font-weight: bold;
+			color: rgb(0, 43, 0);
+		}
+
+		#i1 {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 40px;
+			/* margin-bottom: -350px; */
+		}
+
+		#i2 {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 60px;
+		}
+
+		#d1,#d2 {
+			position: relative;
+		}
+
+		.positioning img {
+			border-radius: 50%;
+		}
+
+		.positioning {
+			display: flex;
+			justify-content: center;
+			margin-top: 50px;
+		}
+
+		.position-center {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 800px;
+			height: 400px;
+		}
+
+		#centered h1 {
+			text-align: center;
+			color: rgb(1, 102, 1);
+			margin-top: 20px;
+			margin-bottom: 15px;
+			font-size: 50px;
+			font-family: 'Square Peg';
+			
+			
+			
+		}
+
+		p {
+			text-align: center;
+		}
+
+		.flex-parent {
+			display: flex;
+			justify-content: center;
+			height: 250px;
+			background-color: white;
+			align-items: center;
+		}
+
+		.center-name-work {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			text-align: center;
+			height: 150px;
+		}
+
+		.center-name-work>h1 {
+			margin: 0;
+		}
+
+		.center-name-work>p {
+			margin-top: 3px;
+		}
+
+		.flex-details {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			margin: 40px;
+		}
+
+		.flex-details>img {
+			margin-right: 8px;
+			border-radius: 50%;
+		}
+		#head-font{
+			margin-top: 20px;
+			margin-bottom: none;
+			font-size: 50px;
+			font-weight: bolder;
+			
+		}
+		#subhead-font{
+			margin-top: none;
+			font-size: 20px;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="d1">
+		<img id="i1" src="https://i.ytimg.com/vi/CvltMRiVNME/maxresdefault.jpg" alt="" height="400" width="800" />
+
+		<div class="position-center">
+			<div class="positioning">
+				<img src="https://i.vimeocdn.com/portrait/45437250_640x640?subrect=19%2C19%2C490%2C490&r=cover" alt=""
+					width="150px" />
+			</div>
+			<div id="centered">
+				<h1>Geekster</h1>
+				<p class="geek-desc">From coding to soft skills, you need</p>
+				<p class="geek-desc">we'll give you the tools and techniques</p>
+			</div>
+		</div>
+	</div>
+
+	<div id="d2">
+		<img id="i2" src="https://i.ytimg.com/vi/CvltMRiVNME/maxresdefault.jpg" alt="" height="400" width="800" />
+
+		<div class="position-center">
+			<div class="center-name-work">
+				<span id="head-font">I'm Ankit</span>
+				<p id="subhead-font">Software Developer</p>
+			</div>
+			<div class="flex-parent">
+				<div class="flex-child">
+					<div class="flex-details">
+						<img src="https://th.bing.com/th/id/OIP.e_oELiEz_n9oAKRtI7itawAAAA?pid=ImgDet&w=361&h=361&rs=1"
+							alt="" height="45px" width="45px" />
+						<div>
+							<span>exemplary@gmail.com</span>
+						</div>
+					</div>
+
+					<div class="flex-details">
+						<img src="https://th.bing.com/th/id/R.706c12d5c4b326ea14dfb8d52361c7a1?rik=var6OapDkisMGQ&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_233147.png&ehk=9TPiTOPHwsE7pMaUoFbyqSYZoRD%2brJhIywwRzr0OAdg%3d&risl=&pid=ImgRaw&r=0"
+							alt="" height="45px" width="45px" />
+						<div>
+							<span>+91 7789651202</span>
+							<br>
+							<span>+91  8965123602</span>
+						</div>
+					</div>
+				</div>
+				<div class="flex-child">
+					<div class="flex-details">
+						<img src="https://static.vecteezy.com/system/resources/previews/000/568/450/original/home-icon-vector.jpg"
+							alt="" height="50px" width="50px" />
+						<div>
+
+							<span>Christ University</span>
+							<br>
+							<span>California, USA</span>
+						</div>
+					</div>
+					<div class="flex-details">
+
+						<img src="https://cdn2.iconfinder.com/data/icons/social-messaging-productivity-black-1/5/12-512.png"
+							alt="" height="45px" width="45px" />
+						<div><span>www.geekster.com</span></div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
